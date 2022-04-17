@@ -36,6 +36,9 @@ h1{
     margin-top: 50px;
     margin-left: 25px;
     margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 400px;
     height: 400px;
     background-color:#282a36 ;
@@ -61,4 +64,8 @@ h1{
     font-size: 14px;
     text-align: center;
 
+}
+
+.descricao-asteroide{
+   
 }

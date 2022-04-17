@@ -52,19 +52,31 @@ function criarCard(){
             if(elem.is_potentially_hazardous_asteroid == false){
                 divCard.innerHTML=
                 `
-                <h4 class="nome-asteroide">Nome: ${nomeSemParenteses}</h4>
-                <h4 class="nome-asteroide">Velocidade: ${converterParaInteiro} KM/s</h4>
-                <h4 class="nome-asteroide">Aproximação em ${aproximacaoReverse} ás ${ aproximacaoHoras}</h4>
-                <h4 class="asteroide-nao-perigoso ">Não é um asteróide potencialmente perigoso</h4>
+                <div class = descricao-asteroide> 
+                    <h4 class="nome-asteroide">Nome: ${nomeSemParenteses}</h4>
+                    <h4 class="nome-asteroide">Velocidade: ${converterParaInteiro} KM/s</h4>
+                    <h4 class="nome-asteroide">Aproximação em ${aproximacaoReverse} ás ${ aproximacaoHoras}</h4>
+                </div>
+                <div class=div-asteroide-perigoso">
+                    <h4 class="asteroide-nao-perigoso ">Não é um asteróide potencialmente perigoso</h4>
+                </div>    
+                
                 `
                 divContainerAsteroides.append(divCard)
             } else {
                 divCard.innerHTML=
                 `
-                <h4 class="nome-asteroide">Nome: ${nomeSemParenteses}</h4>
-                <h4 class="nome-asteroide">Velocidade: ${converterParaInteiro} KM/s</h4>
-                <h4 class="nome-asteroide">Aproximação em ${aproximacaoReverse} ás ${ aproximacaoHoras}</h4>
-                <h4 class="asteroide-perigoso">É um asteróide potencialmente perigoso</h4>
+                <div class = descricao-asteroide> 
+                    <h4 class="nome-asteroide">Nome: ${nomeSemParenteses}</h4>
+                    <h4 class="nome-asteroide">Velocidade: ${converterParaInteiro} KM/s</h4>
+                    <h4 class="nome-asteroide">Aproximação em ${aproximacaoReverse} ás ${ aproximacaoHoras}</h4>
+                </div>
+               
+                <div class=div-asteroide-perigoso">
+                    <h4 class="asteroide-perigoso">É um asteróide potencialmente perigoso</h4>
+                </div>   
+               
+                
                 `
                 divContainerAsteroides.append(divCard)
             }
