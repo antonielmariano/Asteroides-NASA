@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap');
-
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    background: #282a36; 
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #191a20;
+  }
 
 body{
     margin:0;
@@ -37,6 +49,7 @@ h1{
     margin-bottom: 30px;
     margin-left: 25px;
     margin-right: 25px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,11 +63,27 @@ h1{
     font-weight: 300;
     text-align: center;
 }
+.div-asteroide-perigoso{
+    display: flex;
+    flex-direction: column;
+}
+
+.mais-detalhes{
+    all: unset;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #8be9fd;
+    border-radius: 50px;
+    font-size: 19px;
+    width: 170px;
+    height: 45px;
+}
 .asteroide-nao-perigoso {
     color: #5bee80ad;
     font-weight: 300;
     font-style: italic;
-    font-size: 14px;
+    font-size: 13px;
     text-align:center;
 }
 
@@ -62,11 +91,8 @@ h1{
     color: #ff5555;
     font-weight: 300;
     font-style: italic;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
 
 }
 
-.descricao-asteroide{
-   
-}

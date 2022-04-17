@@ -57,7 +57,8 @@ function criarCard(){
                     <h4 class="nome-asteroide">Velocidade: ${converterParaInteiro} KM/s</h4>
                     <h4 class="nome-asteroide">Aproximação em ${aproximacaoReverse} ás ${ aproximacaoHoras}</h4>
                 </div>
-                <div class=div-asteroide-perigoso">
+                <div class="div-asteroide-perigoso">
+                    <button class="mais-detalhes">Mais Detalhes</button>
                     <h4 class="asteroide-nao-perigoso ">Não é um Asteróide perigoso</h4>
                 </div>    
                 
@@ -72,7 +73,8 @@ function criarCard(){
                     <h4 class="nome-asteroide">Aproximação em ${aproximacaoReverse} ás ${ aproximacaoHoras}</h4>
                 </div>
                
-                <div class=div-asteroide-perigoso">
+                <div class="div-asteroide-perigoso">
+                    <button class="mais-detalhes">Mais Detalhes</button>
                     <h4 class="asteroide-perigoso">É um Asteróide perigoso</h4>
                 </div>   
                
@@ -87,4 +89,4 @@ function criarCard(){
     
  
 }
-criarCard()
+ criarCard() 
