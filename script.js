@@ -10,7 +10,7 @@ function filtrarSomenteAsteroides(){
       return elem[dataAtual]
     
     })
-  
+    
    return asteroides[0]
 }
 
@@ -43,6 +43,7 @@ function criarCard(){
             const aproximacao = elem.close_approach_data[0].close_approach_date
             const aproximacaoFull = elem.close_approach_data[0].close_approach_date_full
 
+    
             let nomeSemParenteses= elem.name.replaceAll("(", "").replaceAll(")", "")
             let aproximacaoReverse = aproximacao.split("-").reverse().join().replaceAll(",", "-")
             let aproximacaoHoras =  aproximacaoFull.slice(-5)   
