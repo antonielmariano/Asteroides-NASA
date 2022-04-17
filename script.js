@@ -27,16 +27,17 @@ function criarTextoTotal(){
 }
 criarTextoTotal()
 
-
+let contadorImagem = 0
 function criarCard(){
     divContainerAsteroides.innerHTML=""
-   
+        
     setTimeout(()=>{
         const asteroides = filtrarSomenteAsteroides()
         asteroides.forEach((elem)=>{
-            
+
             console.log(elem)
 
+            contadorImagem++
             const divCard = document.createElement("div")
             const velocidade = elem.close_approach_data[0].relative_velocity.kilometers_per_second
             const aproximacao = elem.close_approach_data[0].close_approach_date
@@ -47,7 +48,11 @@ function criarCard(){
             let aproximacaoHoras =  aproximacaoFull.slice(-5)   
             let converterParaInteiro = parseInt(velocidade)
             
+          
             divCard.setAttribute("class", "card")
+            divCard.style.backgroundImage=`url(./img/${contadorImagem}.jpg)`
+            divCard.style.backgroundSize= "190%"
+            
 
             if(elem.is_potentially_hazardous_asteroid == false){
                 divCard.innerHTML=
@@ -85,7 +90,7 @@ function criarCard(){
 
            
         })
-    }, 500)
+    }, 1000)
     
  
 }

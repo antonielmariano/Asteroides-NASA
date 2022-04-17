@@ -36,8 +36,7 @@ h1{
 #container-cards{
     width: 100%;
     height: auto;
-    background-color: #44475a;
-    display: flex;
+     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
@@ -66,7 +65,7 @@ h1{
 .div-asteroide-perigoso{
     display: flex;
     flex-direction: column;
-}
+    }
 
 .mais-detalhes{
     all: unset;
@@ -80,7 +79,7 @@ h1{
     height: 45px;
 }
 .asteroide-nao-perigoso {
-    color: #5bee80ad;
+    color: #5bee80;
     font-weight: 300;
     font-style: italic;
     font-size: 13px;
