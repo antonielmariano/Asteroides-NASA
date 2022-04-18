@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap');
+
+
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -20,8 +23,19 @@ body{
 }
 
 h1{
-    margin-top: 40px;
+    
     color: #f8f8f2;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h2{
+    
+    color: #f8f8f2;
+    font-size: 30px;
     font-weight: 300;
     font-style: italic;
     text-align: center;
@@ -32,11 +46,87 @@ h1{
     margin-left: 115px;
 }
 
+#selecionar-data{
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+   margin-bottom: 90px;
+}
+
+.input-pesquisar{
+    all: unset;
+    align-self: center;
+    text-align: center;
+    margin-right: 7px;
+    height: 30px;
+    width: 180px;
+    padding: 4px;
+    cursor: text;
+    border-bottom: #8be9fd 1px solid;   
+    color: #f8f8f2;
+    font-weight: 200;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.input-pesquisar::placeholder{
+    color: #f8f8f2;
+    font-weight: 200;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.9s;
+    
+}
+
+.input-pesquisar:focus::placeholder {
+    transition: 0.3s;
+    color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+
+.btn-pesquisar{
+    all: unset;
+    margin-left: 7px;
+    text-align: center;
+    padding: 3px;
+    width: 120px;
+    border: 2px solid #8be9fd;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #8be9fd;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.8s;
+    
+}
+.btn-pesquisar:hover{
+    transition: 0.8s;
+    cursor: pointer;
+    background-color: #8be9fd;
+    border: 2px solid #8be9fd;
+    color:  #282a36;
+    cursor: pointer;
+}
+
+
 
 #container-cards{
     width: 100%;
+    margin-top: -60px;
     height: auto;
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
@@ -44,10 +134,10 @@ h1{
 }
 
 .card{
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 30px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -59,16 +149,47 @@ h1{
 
 .nome-asteroide{
     color: #f8f8f2;
+    margin-top: 10px;
+    font-size: 40px;
     font-weight: 300;
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+.velocidade-asteroide{
+    margin-top: -50px;
+    color: #f8f8f2;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+   
+}
+
+.aproximacao-asteroide{
+    margin-top: -20px;
+    color: #f8f8f2;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+   
 }
 .div-asteroide-perigoso{
     display: flex;
     flex-direction: column;
+    background-color:#1c1c22 ;    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     }
 
-.mais-detalhes{
+.btn-mais-detalhes{
     all: unset;
+    margin-top: 20px;
     align-self: center;
     text-align: center;
     cursor: pointer;
@@ -84,6 +205,7 @@ h1{
     font-style: italic;
     font-size: 13px;
     text-align:center;
+    
 }
 
 .asteroide-perigoso{
@@ -94,4 +216,13 @@ h1{
     text-align: center;
 
 }
+.descricao-asteroide{
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    justify-content: space-evenly;
+}
 
+.buscando-data{
+    margin-top: 900px;
+}

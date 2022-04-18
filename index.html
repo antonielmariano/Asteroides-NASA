@@ -8,11 +8,19 @@
     <title>Asteróides Próximos</title>
 </head>
 <body>
-
+<h1>Passagem de Asteróides</h1>
 <div id="container">
+
+    <div id="selecionar-data">
+        <input class="input-pesquisar" id="input" placeholder="Selecione uma Data" type="date">
+        <button class="btn-pesquisar" onclick="criarCardDataInput() ">Pesquisar</button>
+    </div>
     <div id="total-asteroides">
     
     </div>    
+
+
+    
     
 
     <div id="container-cards">
@@ -24,5 +32,6 @@
  
 <script src="./api.js"></script>    
 <script src="./script.js"></script>    
+<script src="./paginaAsteroide.js"></script> 
 </body>
 </html>

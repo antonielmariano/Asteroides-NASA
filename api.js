@@ -5,19 +5,22 @@ const api_url =  `https://api.nasa.gov/neo/rest/v1/feed?start_date=${dataAtual}&
 
 
 
+
 let totalAsteroides = 0
 const listaAsteroides = []
 
 
-async function obterAsteroides(){
-
-    const response = await fetch(api_url)
+async function obterAsteroides(api=api_url){
+    const response = await fetch(api)
     const data = await response.json()
+    console.log(data)
     totalAsteroides = data.element_count
     listaAsteroides.push({...data.near_earth_objects})
    
 }
 obterAsteroides()
+
+
 
 
 
