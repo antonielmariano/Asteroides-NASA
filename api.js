@@ -13,7 +13,6 @@ const listaAsteroides = []
 async function obterAsteroides(api=api_url){
     const response = await fetch(api)
     const data = await response.json()
-    console.log(data)
     totalAsteroides = data.element_count
     listaAsteroides.push({...data.near_earth_objects})
    
