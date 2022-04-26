@@ -29,7 +29,6 @@ function criarCard(totalAsteroides, dataUsuario){
             const h2 = document.createElement("h2")
             h2.innerText = `Buscando data` 
             divContainerAsteroides.append(h2)
-            setTimeout(()=>{
             criarTexto()
     
             divContainerAsteroides.innerHTML=""
@@ -65,7 +64,7 @@ function criarCard(totalAsteroides, dataUsuario){
                         <h4 class="id-asteroide">ID: ${elem.id}</h4>
                         <h4 class="velocidade-asteroide">Velocidade: ${converterParaInteiro} KM/s</h4>
                         <h4 class="aproximacao-asteroide">Hoje às ${aproximacaoHoras}</h4>
-                        <h4 class="diametro-asteroide">Entre ${diametroMinimo.toFixed() } e ${diametroMaximo.toFixed()} metros de Diâmetro </h4>
+                        <h4 class="diametro-asteroide">Entre ${diametroMinimo.toFixed()} e ${diametroMaximo.toFixed()} metros de Diâmetro </h4>
                     </div>
                     <div class="div-asteroide-perigoso">
                             <h4 class="asteroide-nao-perigoso ">Não é um Asteróide perigoso</h4>
@@ -81,7 +80,7 @@ function criarCard(totalAsteroides, dataUsuario){
                     <h4 class="id-asteroide">ID: ${elem.id}</h4>
                     <h4 class="velocidade-asteroide">Velocidade: ${converterParaInteiro} KM/s</h4>
                     <h4 class="aproximacao-asteroide">Hoje às ${aproximacaoHoras}</h4>
-                    <h4 class="diametro-asteroide">Entre ${diametroMinimo } e  ${diametroMaximo} metros de Diâmetro </h4>
+                    <h4 class="diametro-asteroide">Entre ${diametroMinimo.toFixed()} e  ${diametroMaximo.toFixed()} metros de Diâmetro </h4>
                     </div>
                     
                     <div class="div-asteroide-perigoso">
@@ -96,13 +95,7 @@ function criarCard(totalAsteroides, dataUsuario){
                 
                 
             })
-            }, 1000)
-
-       
-
-
-
-
+            
         }
         if(dataUsuario != "") {
 
@@ -167,7 +160,7 @@ function criarCard(totalAsteroides, dataUsuario){
                         <h4 class="id-asteroide">ID: ${elem.id}</h4>
                         <h4 class="velocidade-asteroide">Velocidade: ${converterParaInteiro} KM/s</h4>
                         <h4 class="aproximacao-asteroide">No dia ${DataReverse} às  ${aproximacaoHoras}</h4>
-                        <h4 class="diametro-asteroide">Entre ${diametroMinimo.toFixed(0) } e  ${diametroMaximo.toFixed(0)} metros de Diâmetro </h4>
+                        <h4 class="diametro-asteroide">Entre ${diametroMinimo.toFixed() } e  ${diametroMaximo.toFixed()} metros de Diâmetro </h4>
                     </div>
                 
                     <div class="div-asteroide-perigoso">
