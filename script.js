@@ -117,7 +117,6 @@ function criarCard(totalAsteroides, dataUsuario){
             divContainerAsteroides.innerHTML=""  
            
             const asteroides =  filtrarAsteroides(dataUsuario)
-            console.log(asteroides)
             asteroides.sort(function(a,b){
                     return new Date(a.close_approach_data[0].close_approach_date_full) - new Date(b.close_approach_data[0].close_approach_date_full)
                 });
